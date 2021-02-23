@@ -235,11 +235,6 @@ int cardhu_keys_init(void);
 int cardhu_pins_state_init(void);
 int cardhu_emc_init(void);
 int cardhu_edp_init(void);
-int cardhu_pmon_init(void);
-int cardhu_pm298_gpio_switch_regulator_init(void);
-int cardhu_pm298_regulator_init(void);
-int cardhu_pm299_gpio_switch_regulator_init(void);
-int cardhu_pm299_regulator_init(void);
 
 extern struct tegra_uart_platform_data cardhu_irda_pdata;
 

@@ -387,12 +387,6 @@ int __init cardhu_regulator_init(void)
 	tegra_get_pmu_board_info(&pmu_board_info);
 	pmu_board_info.sku=1;
 
-	if (pmu_board_info.board_id == BOARD_PMU_PM298)
-		return cardhu_pm298_regulator_init();
-
-	if (pmu_board_info.board_id == BOARD_PMU_PM299)
-		return cardhu_pm299_regulator_init();
-
 	/* The regulator details have complete constraints */
 	regulator_has_full_constraints();
 
